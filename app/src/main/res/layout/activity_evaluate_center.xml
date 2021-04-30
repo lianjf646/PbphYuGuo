@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_activity_bg"
+    android:orientation="vertical"
+    tools:context="com.pbph.yuguo.activity.EvaluateCenterActivity">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_ebebeb" />
+
+    <ScrollView
+        android:id="@+id/sv_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_publish"
+        android:layout_below="@+id/view_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_single_goods"
+                layout="@layout/include_single_goods_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_130dp" />
+
+            <include layout="@layout/include_segmenting_line_5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评价"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14" />
+
+                <EditText
+                    android:id="@+id/et_evaluate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80dp"
+                    android:layout_marginTop="@dimen/dp_10dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="请对商品进行评价(1-120个字符)"
+                    android:maxEms="120"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <include layout="@layout/include_segmenting_line_5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加图片(最多可上传三张)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14" />
+
+                <LinearLayout
+                    android:id="@+id/ll_image_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_add_photo"
+                        android:layout_width="@dimen/dp_80dp"
+                        android:layout_height="@dimen/dp_80dp"
+
+                        android:src="@drawable/add_photos" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_ebebeb" />
+
+            <LinearLayout
+                android:id="@+id/ll_check"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50dp"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_check"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_15dp"
+                    android:background="@drawable/checkbox_bg"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10dp"
+                    android:text="匿名发布"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_ebebeb" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_publish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+</RelativeLayout>

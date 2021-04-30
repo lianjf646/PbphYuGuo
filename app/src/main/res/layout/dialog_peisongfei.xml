@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_15dp"
+        android:lines="1"
+        android:text="配送费说明"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_jichuyunfei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10dp"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:paddingRight="@dimen/dp_10dp"
+        android:paddingTop="@dimen/dp_10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10dp"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:minLines="1"
+            android:text="基础运费:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_jichuyunfei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10dp"
+            android:layout_weight="1"
+            android:gravity="end|center"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            tools:text="￥0.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chaozhongyunfei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10dp"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:paddingRight="@dimen/dp_10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10dp"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:minLines="1"
+            android:text="超重运费:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_chaozhongyunfei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10dp"
+            android:layout_weight="1"
+            android:gravity="end|center"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            tools:text="￥0.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chaojuyunfei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10dp"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:paddingRight="@dimen/dp_10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10dp"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:minLines="1"
+            android:text="超距运费:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_chaojuyunfei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10dp"
+            android:layout_weight="1"
+            android:gravity="end|center"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            tools:text="￥0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10dp"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:minLines="1"
+            android:padding="@dimen/dp_10dp"
+            android:text="总计价格:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_priceall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10dp"
+            android:layout_weight="1"
+            android:gravity="end|center"
+            android:minLines="1"
+            android:padding="@dimen/dp_10dp"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_15"
+            tools:text="￥0.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shuoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10dp"
+            android:gravity="start|center"
+            android:minLines="1"
+            android:paddingEnd="@dimen/dp_10dp"
+            android:paddingStart="@dimen/dp_10dp"
+            android:paddingTop="@dimen/dp_10dp"
+            android:text="说明:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_chaozhongshuoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_5dp"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/text_size_12"
+            tools:text="超重运费: 每超过1KG收取2元超重运费" />
+
+        <TextView
+            android:id="@+id/tv_chaojushuoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_5dp"
+            android:textColor="@color/black_gray"
+            android:textSize="@dimen/text_size_12"
+            tools:text="超距运费: 每超过1公里收取2元超距运费" />
+
+    </LinearLayout>
+</LinearLayout>
+

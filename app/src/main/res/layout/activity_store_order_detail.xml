@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pbph.yuguo.activity.OrderDetailActivity">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/view_top"
+        android:background="@color/gray_f0f0f0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!--订单状态-->
+            <include
+                android:id="@+id/layout_order_status"
+                layout="@layout/include_order_status" />
+
+            <include layout="@layout/include_segmenting_line_5dp" />
+
+            <!--商品列表-->
+            <LinearLayout
+                android:id="@+id/ll_goods_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <include layout="@layout/include_segmenting_line_5dp" />
+            <!--金额-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45dp"
+                android:paddingEnd="@dimen/dp_15dp"
+                android:paddingStart="@dimen/dp_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="应收金额"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="￥602" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+            <!--金额-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45dp"
+                android:paddingEnd="@dimen/dp_15dp"
+                android:paddingStart="@dimen/dp_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="优惠金额"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_discount_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="￥602" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+            <!--金额-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45dp"
+                android:paddingEnd="@dimen/dp_15dp"
+                android:paddingStart="@dimen/dp_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="实付金额"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_real_pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_15"
+                    tools:text="￥602" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_segmenting_line_5dp" />
+
+            <!--订单详情-->
+            <include
+                android:id="@+id/layout_order_info"
+                layout="@layout/include_store_order_info" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/rl_bottom"
+        android:background="@color/gray_ebebeb" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_btn1"
+            android:layout_width="@dimen/dp_80dp"
+            android:layout_height="@dimen/dp_30dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@drawable/text_view_border"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

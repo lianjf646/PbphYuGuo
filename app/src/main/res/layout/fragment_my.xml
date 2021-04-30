@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收货地址"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/view_my_heard_layout"
+                layout="@layout/include_my_heard_login"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/view_not_login"
+                layout="@layout/include_my_heard_login_no"
+                android:visibility="visible" />
+
+
+            <include
+                android:id="@+id/view_my_bottom_view"
+                layout="@layout/include_my_bottom_view" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

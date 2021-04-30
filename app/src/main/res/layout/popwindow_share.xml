@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_10dp"
+        android:paddingTop="@dimen/dp_10dp">
+
+        <TextView
+            android:id="@+id/tv_share_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_5dp"
+            android:drawableTop="@drawable/qq"
+            android:gravity="center"
+            android:text="QQ"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_share_timeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_5dp"
+            android:drawableTop="@drawable/pyq"
+            android:gravity="center"
+            android:text="朋友圈" />
+
+        <TextView
+            android:id="@+id/tv_share_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_5dp"
+            android:drawableTop="@drawable/wx"
+            android:gravity="center"
+            android:text="微信" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray" />
+
+    <Button
+        android:id="@+id/btn_share_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_goods_info_conpon_list"
+        android:background="@color/white"
+        android:text="取消"
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_size_19" />
+</LinearLayout>

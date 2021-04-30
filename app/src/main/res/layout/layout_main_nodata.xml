@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_nodata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+
+    <WebView
+        android:id="@+id/home_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/shouyedwsb_tishikuang"
+        android:drawableLeft="@drawable/shouyedwsb_jingshi"
+        android:drawablePadding="@dimen/dp_5dp"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/dp_15dp"
+        android:singleLine="true"
+        android:text="当前位置不在配送范围内，搜索其他收货地址"
+        android:textColor="#333333"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <!--<com.youth.banner.Banner-->
+    <!--android:id="@+id/banner_nodatas"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:layout_margin="@dimen/dp_10dp" />-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/out_of_range_03" />-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/dp_100dp"-->
+    <!--android:layout_marginTop="@dimen/dp_15dp"-->
+    <!--android:gravity="center"-->
+    <!--android:lineSpacingExtra="@dimen/dp_7dp"-->
+    <!--android:text="当前位置不在配送范围内,请重新选择配送地址。\n(目前配送区域包括：道里区、道外区、南岗区、香坊区)"-->
+    <!--android:textColor="@color/black_gray"-->
+    <!--android:textSize="@dimen/text_size_12" />-->
+    <!--</LinearLayout>-->
+
+
+</FrameLayout>

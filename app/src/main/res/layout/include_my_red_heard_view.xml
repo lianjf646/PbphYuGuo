@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_50dp"
+        android:src="@drawable/coin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_35dp"
+        android:text="当前余额(元)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="¥0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_30" />
+
+    <Button
+        android:id="@+id/btn_withdrawcash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25dp"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/green_btn_bg"
+        android:text="提现"
+        android:textColor="@color/white" />
+
+    <include layout="@layout/include_segmenting_line_5dp" />
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/line" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_5dp"-->
+    <!--android:background="@color/list_activity_bg" />-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/line" />-->
+
+</LinearLayout>

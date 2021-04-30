@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.pbph.yuguo.activity.OrderDetailActivity">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/view_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--订单状态-->
+            <include
+                android:id="@+id/layout_order_status"
+                layout="@layout/include_order_status" />
+
+            <!--配送信息-->
+            <include
+                android:id="@+id/layout_distribution_info"
+                layout="@layout/include_distribution_info"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/view_distribution_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <!--收货地址-->
+            <include
+                android:id="@+id/layout_check_address"
+                layout="@layout/item_address_list" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/ll_delivery_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_15dp"
+                    android:src="@drawable/delivery_time" />
+
+                <TextView
+                    android:id="@+id/tv_delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_15dp"
+                    android:text="配送时间：明日配送"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!--订单商品-->
+            <LinearLayout
+                android:id="@+id/ll_goods_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_segmenting_line_5dp" />
+
+                <include
+                    android:id="@+id/layout_single_goods"
+                    layout="@layout/include_single_goods_layout"
+                    android:visibility="visible" />
+
+                <include
+                    android:id="@+id/layout_multi_goods"
+                    layout="@layout/include_multi_goods_layout"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include layout="@layout/include_segmenting_line_5dp" />
+
+            <!--金额-->
+            <include
+                android:id="@+id/layout_order_money"
+                layout="@layout/include_order_money" />
+
+            <include layout="@layout/include_segmenting_line_5dp" />
+
+            <!--订单详情-->
+            <include
+                android:id="@+id/layout_order_info"
+                layout="@layout/include_order_info" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/rl_bottom"
+        android:background="@color/gray_ebebeb" />
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_15dp">
+
+        <TextView
+            android:id="@+id/tv_btn3"
+            android:layout_width="@dimen/dp_80dp"
+            android:layout_height="@dimen/dp_30dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@drawable/text_view_hollow_border_green"
+            android:gravity="center"
+            android:text="再来一单"
+            android:textColor="@color/main_color" />
+
+        <TextView
+            android:id="@+id/tv_btn2"
+            android:layout_width="@dimen/dp_80dp"
+            android:layout_height="@dimen/dp_30dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@drawable/text_view_hollow_border_green"
+            android:gravity="center"
+            android:textColor="@color/main_color"
+            android:visibility="visible"
+            tools:text="取消订单" />
+
+        <TextView
+            android:id="@+id/tv_btn1"
+            android:layout_width="@dimen/dp_80dp"
+            android:layout_height="@dimen/dp_30dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@drawable/text_view_border"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            tools:text="去支付" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

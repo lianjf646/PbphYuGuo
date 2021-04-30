@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/main_bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_80dp"
+        android:src="@drawable/successful" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_15dp"
+        android:text="支付成功"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_21" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_5dp"
+        android:text="¥0.00"
+        android:textSize="@dimen/text_size_19" />
+
+    <Button
+        android:id="@+id/btn_look_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:layout_marginTop="@dimen/dp_50dp"
+        android:background="@drawable/text_view_border"
+        android:text="查看订单"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

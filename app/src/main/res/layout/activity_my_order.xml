@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_activity_bg"
+    android:orientation="vertical"
+    tools:context="com.pbph.yuguo.activity.MyOrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_5dp"
+            android:padding="@dimen/dp_10dp"
+            android:src="@drawable/back" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_app_order"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_30dp"
+                android:background="@drawable/order_left_rb_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="APP订单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <RadioButton
+                android:id="@+id/rb_store_order"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/dp_30dp"
+                android:background="@drawable/order_right_rb_bg_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="门店订单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/gray_ebebeb" />
+
+    <include
+        android:id="@+id/layout_app_order"
+        layout="@layout/include_app_order_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_divider"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_store_order"
+        layout="@layout/include_store_order_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_divider"
+        android:visibility="gone" />
+</RelativeLayout>

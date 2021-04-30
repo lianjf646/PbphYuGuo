@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_130dp">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/tv_more"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_goods_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:drawableEnd="@drawable/right"
+        android:drawablePadding="@dimen/dp_5dp"
+        android:gravity="center"
+        android:paddingEnd="@dimen/dp_15dp"
+        android:paddingStart="@dimen/dp_15dp"
+        tools:text="共x件" />
+</RelativeLayout>

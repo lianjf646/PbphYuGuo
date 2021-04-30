@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15dp"
+        android:background="@drawable/round_point_bg_e5e5"
+        android:paddingBottom="@dimen/dp_4dp"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:paddingRight="@dimen/dp_10dp"
+        android:paddingTop="@dimen/dp_4dp"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2019-05-21 20:42:16" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:id="@+id/constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10dp"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:layout_marginTop="@dimen/dp_10dp"
+        android:background="@drawable/round_point_bg_write"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_date">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_15dp"
+            android:text="订单消息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_shop"
+            android:layout_width="@dimen/dp_80dp"
+            android:layout_height="@dimen/dp_80dp"
+            android:layout_marginBottom="@dimen/dp_15dp"
+            android:layout_marginTop="@dimen/dp_15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ddxx_sg_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:maxLines="4"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_13"
+            app:layout_constraintLeft_toRightOf="@id/iv_shop"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_shop"
+            tools:text="消息内容" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

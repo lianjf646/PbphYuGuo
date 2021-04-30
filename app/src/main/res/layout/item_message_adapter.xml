@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.pbph.yuguo.myview.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingBottom="1dp"
+    android:paddingTop="1dp"
+    app:ios="false"
+    android:layout_gravity="center"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraint"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/dp_50dp"
+            android:layout_height="@dimen/dp_50dp"
+            android:layout_marginBottom="@dimen/dp_10dp"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:layout_marginTop="@dimen/dp_10dp"
+            android:src="@drawable/xx_ddxx_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10dp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="内容"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constraintEnd_toEndOf="@+id/time"
+            app:layout_constraintLeft_toLeftOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:text="时间"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageView" />
+
+
+        <TextView
+            android:id="@+id/tv_point_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_radius"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minHeight="15dp"
+            android:minWidth="15dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="2dp"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:visibility="visible"
+            app:layout_constraintRight_toRightOf="@id/imageView"
+            app:layout_constraintTop_toTopOf="@id/imageView" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="@dimen/dp_60dp"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:text="删除"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+</com.pbph.yuguo.myview.SwipeMenuLayout>

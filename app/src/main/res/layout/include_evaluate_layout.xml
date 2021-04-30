@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_10dp"
+    android:paddingTop="@dimen/dp_10dp">
+
+
+    <TextView
+        android:id="@+id/tv_evaluate_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品评价(0)"
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_size_14"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_size_14"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/tv_evaluate_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp_5dp"
+        android:drawableRight="@drawable/right"
+        android:text="查看全部"
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_size_14"
+        android:typeface="monospace" />
+</LinearLayout>
+

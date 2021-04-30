@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_balance"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_10dp"
+    android:paddingRight="@dimen/dp_10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:paddingTop="@dimen/dp_15dp"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <com.pbph.yuguo.myview.MyGridView
+        android:id="@+id/myGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="@color/transparent"
+        android:horizontalSpacing="@dimen/dp_8dp"
+        android:numColumns="3"
+        android:padding="@dimen/dp_8dp"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dp_8dp" />
+
+</LinearLayout>

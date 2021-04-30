@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_invite_xia"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/invite_title_background"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_2dp"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:text="邀请好友"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_17" />
+
+    <TextView
+        android:id="@+id/tv_coupon_require"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="每成功邀请1人"
+        android:textColor="@color/main_color"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_coupon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="可获得5元无门槛优惠券"
+        android:textColor="@color/main_color"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/include_coupon"
+        layout="@layout/layout_share_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_10dp"
+    android:paddingTop="@dimen/dp_10dp">
+
+    <ImageView
+        android:id="@+id/iv_position_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_15dp"
+        android:src="@drawable/distribution" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_15dp"
+        android:layout_toEndOf="@+id/iv_position_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_distribution_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送员已接单"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_distribution_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5dp"
+            android:text="2018-10-02  10:24" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_15dp"
+        android:src="@drawable/right" />
+</RelativeLayout>

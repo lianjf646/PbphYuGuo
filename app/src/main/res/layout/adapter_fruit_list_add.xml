@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_10dp"
+    android:paddingRight="@dimen/dp_10dp">
+
+    <ImageView
+        android:id="@+id/iv_fruit_add"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_fruit_add"
+        android:layout_alignLeft="@id/iv_fruit_add"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:src="@drawable/feng_xiang_ico"
+        android:visibility="gone" />
+
+</RelativeLayout>

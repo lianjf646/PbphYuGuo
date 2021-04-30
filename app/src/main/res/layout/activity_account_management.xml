@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_ebebeb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_user_face"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60dp"
+            android:paddingEnd="@dimen/dp_15dp"
+            android:paddingStart="@dimen/dp_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头像"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/iv_user_face"
+                android:layout_width="@dimen/dp_40dp"
+                android:layout_height="@dimen/dp_40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wodeyidenglu_touxiang" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@color/gray_ebebeb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45dp"
+            android:paddingEnd="@dimen/dp_15dp"
+            android:paddingStart="@dimen/dp_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="昵称"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="center_vertical|end"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@color/gray_ebebeb" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45dp"
+            android:paddingEnd="@dimen/dp_15dp"
+            android:paddingStart="@dimen/dp_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@drawable/right"
+                android:drawablePadding="@dimen/dp_5dp"
+                android:gravity="center|end"
+                android:text="请选择"
+                android:textColor="@color/black_gray" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@color/gray_ebebeb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45dp"
+            android:paddingEnd="@dimen/dp_15dp"
+            android:paddingStart="@dimen/dp_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="真实姓名"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/et_real_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableEnd="@drawable/right"
+                android:drawablePadding="@dimen/dp_5dp"
+                android:gravity="center_vertical|end"
+                android:text="请实名认证"
+                android:textColor="@color/black_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@color/gray_ebebeb" />
+
+        <RelativeLayout
+            android:id="@+id/rl_birth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45dp"
+            android:paddingEnd="@dimen/dp_15dp"
+            android:paddingStart="@dimen/dp_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="出生日期"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableEnd="@drawable/right"
+                android:drawablePadding="@dimen/dp_5dp"
+                android:gravity="center_vertical|end"
+                android:text="请实名认证"
+                android:textColor="@color/black_gray"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="@dimen/text_size_14"  />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@color/gray_ebebeb" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/list_activity_bg" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50dp"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</FrameLayout>
+

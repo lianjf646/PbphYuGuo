@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">我的花果山</string>
+    <string name="btn_login_getcode_text">获取验证码</string>
+    <string name="phone_number_is_null">请输入手机号码</string>
+    <string name="sms_number_is_null">请输入验证码</string>
+    <string name="Illegal_phone_number">非法手机号</string>
+    <string name="connect_error">与服务器链接失败，请稍后尝试</string>
+    <!-- 图片浏览 -->
+    <!--<string name="mission_total">总&#160;&#160;&#160;&#160;&#160;量：%s</string>-->
+    <string name="login_get_sms_code">获取验证码</string>
+    <string name="login_help">手机号登录</string>
+    <string name="login_username_hint">请输入手机号</string>
+    <string name="login_image_code_hint">请输入图形验证码</string>
+    <string name="login_sms_code_hint">请输入验证码</string>
+
+    <string name="no_choice_address">该地址不在配送范围</string>
+    <string name="vip"><![CDATA[<我的花果山VIP会员>]]></string>
+    <string name="orderfill_vip_content1"><![CDATA[开通<我的花果山>VIP会员]]></string>
+    <string name="orderfill_vip_content2">享品质鲜果    供全优服务</string>
+
+    <string-array name="areaList">
+        <item>南岗区</item>
+        <item>道里区</item>
+        <item>道外区</item>
+        <item>香坊区</item>
+        <item>松北区</item>
+        <item>呼兰区</item>
+    </string-array>
+
+</resources>

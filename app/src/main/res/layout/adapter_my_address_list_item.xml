@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:src="@drawable/positioning_green" />
+
+        <TextView
+
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_tel"
+            android:layout_alignStart="@id/tv_address_info"
+            android:layout_alignBottom="@+id/tv_tel"
+            android:layout_toRightOf="@+id/tv"
+            android:text="昵称:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10dp"
+            android:layout_marginTop="@dimen/dp_15dp"
+            android:layout_marginRight="@dimen/dp_15dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:text="手机号:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <TextView
+            android:id="@+id/tv_address_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="@dimen/dp_10dp"
+            android:layout_marginTop="@dimen/dp_10dp"
+            android:layout_marginRight="@dimen/dp_30dp"
+            android:layout_marginBottom="@dimen/dp_15dp"
+            android:layout_toRightOf="@id/iv"
+            android:gravity="center"
+            android:lines="1"
+            android:text="地址信息:"
+            android:textSize="@dimen/text_size_14" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/relative"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15dp"
+        android:paddingTop="@dimen/dp_10dp"
+        android:paddingRight="@dimen/dp_15dp"
+        android:paddingBottom="@dimen/dp_10dp">
+
+        <CheckBox
+            android:id="@+id/chb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/chb_address_default"
+            android:drawablePadding="@dimen/dp_5dp"
+            android:text="设为默认地址"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_10dp"
+            android:drawableLeft="@drawable/edit"
+            android:drawablePadding="@dimen/dp_5dp"
+            android:gravity="center"
+            android:text="编辑"
+            android:paddingTop="@dimen/dp_10dp"
+            android:paddingBottom="@dimen/dp_10dp"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line"
+            android:layout_alignParentEnd="true"
+            android:drawableLeft="@drawable/delete"
+            android:drawablePadding="@dimen/dp_5dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</RelativeLayout>

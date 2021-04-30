@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp_15dp"
+    android:layout_marginStart="@dimen/dp_15dp"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_coupon_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/coupons3" />
+
+        <LinearLayout
+            android:id="@+id/ll_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                tools:text="999.99" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_price"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_7dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            tools:text="满80元可用" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rl_left"
+        android:layout_alignTop="@+id/rl_left"
+        android:layout_toEndOf="@+id/rl_left"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_exclusive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/exclusive"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_coupon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10dp"
+            android:layout_marginStart="@dimen/dp_5dp"
+            android:layout_marginTop="@dimen/dp_10dp"
+            android:layout_toStartOf="@+id/iv_exclusive"
+            android:lines="2"
+            android:textColor="@color/black"
+            tools:text="抵用券名称" />
+
+        <TextView
+            android:id="@+id/tv_buy_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_coupon_name"
+            android:layout_marginStart="@dimen/dp_5dp"
+            android:layout_marginTop="@dimen/dp_10dp"
+            tools:text="2018.6 - 2018.9" />
+
+        <ImageView
+            android:id="@+id/iv_coupon_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_5dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
+

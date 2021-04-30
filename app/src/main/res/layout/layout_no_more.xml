@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_15dp"
+        android:paddingTop="@dimen/dp_15dp"
+        android:text="没有更多了" />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:background="@color/line" />
+</LinearLayout>

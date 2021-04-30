@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.pbph.yuguo.activity.SettingActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_ebebeb" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_100dp"
+        android:layout_height="@dimen/dp_100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_50dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/wodeyidenglu_touxiang" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:textColor="@color/black_gray"
+        tools:text="版本号 1.0.1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dp_50dp"
+        android:background="@color/gray_ebebeb" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:gravity="center"
+            android:text="检测更新"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_check_update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_15dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:drawableEnd="@drawable/right"
+            android:drawablePadding="@dimen/dp_5dp"
+            android:gravity="center"
+            android:text="已是最新版本"
+            android:textColor="@color/black_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_ebebeb" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:gravity="center"
+            android:text="清除缓存"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="@dimen/dp_100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_15dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:drawableEnd="@drawable/right"
+            android:drawablePadding="@dimen/dp_5dp"
+            android:gravity="center|right"
+            android:text="0M"
+            android:textColor="@color/black_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_ebebeb" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50dp"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/text_view_border"
+        android:gravity="center"
+        android:text="安全退出"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

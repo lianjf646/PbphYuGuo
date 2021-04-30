@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bg_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quan_main_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_8dp"
+        android:paddingTop="@dimen/dp_8dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0元优惠券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_21"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="满0元可用"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_bg_green"
+        android:layout_alignLeft="@id/ll_bg_green"
+        android:layout_alignRight="@id/ll_bg_green"
+        android:layout_alignTop="@id/ll_bg_green"
+        android:background="@drawable/quan_main_bg1"
+        android:gravity="right|bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zhang" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_container"
+    android:layout_width="@dimen/dp_80dp"
+    android:layout_height="@dimen/dp_80dp">
+
+    <ImageView
+        android:id="@+id/iv_workimg"
+        android:layout_width="@dimen/dp_80dp"
+        android:layout_height="@dimen/dp_80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/add_photos"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_workimgx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:scaleType="fitXY"
+        android:src="@drawable/guanbi" />
+</FrameLayout>

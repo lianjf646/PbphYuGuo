@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray_f0f0f0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_confirm">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layout_vip_head"
+                    layout="@layout/include_vip_head" />
+
+                <include
+                    android:id="@+id/layout_vip_equity"
+                    layout="@layout/include_vip_equity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_15dp"
+                    android:layout_marginStart="@dimen/dp_15dp"
+                    android:layout_marginTop="-40dp" />
+                <TextView
+                    android:id="@+id/tv_no_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/out_of_range_03"
+                    android:drawablePadding="@dimen/dp_10dp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_40dp"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:visibility="gone"
+                    android:text="暂无商品" />
+                <include
+                    android:id="@+id/layout_vip_goods"
+                    layout="@layout/include_vip_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dfac65"
+            tools:text="立即开通vip会员"
+            android:textColor="@color/color_6a3906" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/shop_logout"
+        layout="@layout/layout_shoppingcar_logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_line"
+        android:visibility="gone" />
+</RelativeLayout>

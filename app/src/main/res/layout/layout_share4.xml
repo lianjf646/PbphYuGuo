@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_invite_shang"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="69dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/invite_title_background"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_10dp"
+            android:paddingRight="@dimen/dp_10dp"
+            android:text="邀请会员"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="邀请好友开通VIP会员"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/dp_25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/invite_shang_background"
+        android:layout_marginTop="@dimen/dp_7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每邀请"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15"
+                 />
+
+            <TextView
+                android:id="@+id/tv_vip_ren_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人首次开通"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="VIP会员"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5dp"
+            android:paddingLeft="@dimen/dp_10dp"
+            android:layout_marginBottom="@dimen/dp_15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立返邀请人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15"
+                />
+
+            <TextView
+                android:id="@+id/tv_vip_ren_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="19.8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元无门槛优惠券"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

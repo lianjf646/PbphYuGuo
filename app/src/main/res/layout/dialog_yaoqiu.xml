@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#11ffffff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp_40dp"
+        android:layout_marginEnd="@dimen/dp_40dp"
+        android:background="@drawable/free_dialog_bg"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传证件照片要求"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/text_size_15"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#333333"/>
+
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、请上传本人清晰、完整的彩色身份证照片，确保证件在有效期内；"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_25dp"
+            android:layout_marginEnd="@dimen/dp_25dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="#333333"/>
+
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2、身份证各项信息及头像清晰可见，易于识别；"
+            android:layout_marginTop="@dimen/dp_4dp"
+            android:layout_marginStart="@dimen/dp_25dp"
+            android:layout_marginEnd="@dimen/dp_25dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="#333333"/>
+
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3、身份证必须真实拍摄，不得使用复印件和扫描件；"
+            android:layout_marginTop="@dimen/dp_4dp"
+            android:layout_marginStart="@dimen/dp_25dp"
+            android:layout_marginEnd="@dimen/dp_25dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="#333333"/>
+
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4、照片格式必须为JPG或PNG；"
+            android:layout_marginTop="@dimen/dp_4dp"
+            android:layout_marginStart="@dimen/dp_25dp"
+            android:layout_marginEnd="@dimen/dp_25dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="#333333"/>
+
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5、建议横屏拍摄，以满足照片上传要求。"
+            android:layout_marginTop="@dimen/dp_4dp"
+            android:layout_marginStart="@dimen/dp_25dp"
+            android:layout_marginEnd="@dimen/dp_25dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/botton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_alignParentBottom="true"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_17"
+            android:background="@drawable/free_dialog_lv_bg"/>
+
+    </LinearLayout>
+</RelativeLayout>

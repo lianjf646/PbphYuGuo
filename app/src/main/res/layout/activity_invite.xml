@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            app:elevation="0dip">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll">
+                <include
+                    android:id="@+id/include_4"
+                    layout="@layout/layout_share4"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <include
+                    android:id="@+id/include_1"
+                    layout="@layout/layout_share1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/include_4"
+                     />
+
+                <include
+                    android:id="@+id/include_2"
+                    layout="@layout/layout_share2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/include_1" />
+
+
+                <TextView
+                    android:id="@+id/tv_guizeshuoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/dp_15dp"
+                    android:background="@drawable/share_rule_tv_bg"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dp_8dp"
+                    android:text="规则说明"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14" />
+
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_main_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:fillViewport="false"
+                app:tabIndicatorColor="@color/main_color"
+                app:tabIndicatorHeight="2.0dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/main_color"
+                app:tabTextColor="@color/black_gray" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_10dp"
+                android:paddingTop="@dimen/dp_10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_list_head1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="排名"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/tv_list_head2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="昵称"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/tv_list_head3"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="邀请人数"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_gray" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:text="立即分享"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+</LinearLayout>

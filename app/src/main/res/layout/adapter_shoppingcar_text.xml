@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_8dp"
+        android:paddingTop="@dimen/dp_8dp"
+        android:text="因配送范围、库存原因而导致失效的商品"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/text_size_13" />
+
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8dp"
+        android:background="@drawable/shoppingcar_clear_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_5dp"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:paddingRight="@dimen/dp_10dp"
+        android:paddingTop="@dimen/dp_5dp"
+        android:text="清除失效商品"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+</LinearLayout>

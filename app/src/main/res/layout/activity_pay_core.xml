@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pay_corebackground">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="¥0.00"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tv_surplus_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="剩余支付时间:  00:00"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbn_balance_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/stored_value"
+            android:drawablePadding="@dimen/dp_15dp"
+            android:drawableRight="@drawable/chb_address_default"
+            android:padding="@dimen/dp_15dp"
+            android:text="储值支付（0.00）"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:background="@color/line" />
+
+        <RadioButton
+            android:id="@+id/rbn_wx_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/micro_letter_to_pay"
+            android:drawablePadding="@dimen/dp_15dp"
+            android:drawableRight="@drawable/chb_address_default"
+            android:padding="@dimen/dp_15dp"
+            android:text="微信支付" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp_15dp"
+            android:background="@color/line" />
+
+        <RadioButton
+            android:id="@+id/rbn_ali_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/alipay_payment"
+            android:drawablePadding="@dimen/dp_15dp"
+            android:drawableRight="@drawable/chb_address_default"
+            android:padding="@dimen/dp_15dp"
+            android:text="支付宝支付" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/list_activity_bg" />
+
+    <Button
+        android:id="@+id/btn_confirm_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/main_color"
+        android:text="立即支付"
+        android:textColor="@color/white" />
+
+</LinearLayout>

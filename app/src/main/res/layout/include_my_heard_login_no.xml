@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/wodeyidenglu_viphuiyuan1" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp_50dp"
+        android:background="@drawable/green_btn_bg"
+        android:paddingLeft="60dp"
+        android:paddingTop="@dimen/dp_15dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="@dimen/dp_15dp"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17" />
+</RelativeLayout>

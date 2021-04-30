@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_3dp"
+    android:paddingBottom="@dimen/dp_3dp">
+
+    <ImageButton
+        android:id="@+id/ibtn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:background="@null"
+        android:padding="6dip"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:layout_weight="1"
+        android:background="@drawable/search_edt_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/sousuoicon"
+            android:drawablePadding="@dimen/dp_10dp"
+            android:gravity="left|center"
+            android:hint="请输入搜索关键词"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingLeft="@dimen/dp_10dp"
+            android:paddingTop="@dimen/dp_5dp"
+            android:paddingRight="@dimen/dp_10dp"
+            android:paddingBottom="@dimen/dp_5dp"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_13" />
+
+        <ImageButton
+            android:id="@+id/ivbtn_clean_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingRight="@dimen/dp_15dp"
+            android:src="@drawable/shut_down_black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:background="@null"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="6dip"
+        android:text="搜索"
+        android:textColor="@color/dark_gray" />
+</LinearLayout>

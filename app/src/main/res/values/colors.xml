@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="main_bg">#f0f0f6</color>
+    <color name="main_color">#19b66e</color>
+    <color name="main_second_color">#23ce7f</color>
+    <color name="dark_gray">#999999</color>
+    <color name="black_gray">#666666</color>
+    <color name="gray_ebebeb">#ebebeb</color>
+    <color name="gray_f0f0f0">#f0f0f0</color>
+    <color name="gray_f5f5f5">#f5f5f5</color>
+    <color name="red">#fe0000</color>
+    <color name="pink_fdbfbf">#fdbfbf</color>
+    <color name="coupon_bg">#fdb004</color>
+    <color name="vip_coupon_bg">#e3b774</color>
+    <color name="white">#ffffff</color><!--白色 -->
+    <color name="white1">#70ffffff</color><!--白色 -->
+    <color name="light_gray">#cccccc</color>
+    <color name="date_bg">#e5e5e5</color>
+    <color name="transparent">#0000</color><!-- 透明 -->
+    <color name="black">#222222</color>
+
+    <color name="color_787878">#787878</color>
+    <color name="qingse_f8f8f8">#f8f8f8</color>
+
+    <color name="line">#ebebeb</color>
+
+    <!--表单页 卡片背景-->
+    <color name="list_activity_bg">#f9f9f9</color>
+
+    <color name="color_bf6301">#bf6301</color>
+
+    <color name="color_balance">#CCA36A</color>
+    <color name="color_e3b774">#e3b774</color>
+    <color name="color_dfac65">#dfac65</color>
+    <color name="color_6a3906">#6a3906</color>
+    <color name="color_ffc539">#ffc539</color>
+
+    <color name="color_red">#EA5421</color>
+
+</resources>

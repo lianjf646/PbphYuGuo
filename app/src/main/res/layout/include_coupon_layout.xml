@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10dp"
+        android:background="@drawable/coupon_bg"
+        android:padding="@dimen/dp_2dp"
+        android:text="领券"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size_11"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10dp"
+        android:text="优惠券"
+        android:textSize="@dimen/text_size_14"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/tv_coupon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/dp_10dp"
+        android:paddingTop="@dimen/dp_10dp"
+        android:text=" "
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_size_14"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp_5dp"
+        android:drawableRight="@drawable/right"
+
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_size_14"
+        android:typeface="monospace" />
+</LinearLayout>
+

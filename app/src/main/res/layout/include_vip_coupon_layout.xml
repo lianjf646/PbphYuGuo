@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_vip_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spxq_vip_bgr"
+        android:drawablePadding="@dimen/dp_7dp"
+        android:drawableRight="@drawable/small_arrow"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10dp"
+        android:paddingLeft="@dimen/dp_15dp"
+        android:paddingRight="@dimen/main_padding"
+        android:paddingTop="@dimen/dp_10dp"
+        android:text="立即\n开通"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/view_bg_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/spxq_vip_bgl1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_vip_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15dp"
+        android:src="@drawable/xq_crown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_vip_coupon_line11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15dp"
+        android:layout_marginTop="@dimen/dp_10dp"
+        android:text="成为"
+        android:textColor="#6a3906"
+        android:textSize="@dimen/text_size_13"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/iv_left"
+        app:layout_constraintStart_toEndOf="@+id/iv_left"
+        app:layout_constraintTop_toTopOf="@+id/iv_left" />
+
+    <TextView
+        android:id="@+id/tv_vip_coupon_line12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2dp"
+        android:layout_marginTop="@dimen/dp_10dp"
+        android:text="@string/vip"
+        android:textColor="#6a3906"
+        android:textSize="@dimen/text_size_15"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_vip_coupon_line11"
+        app:layout_constraintStart_toEndOf="@+id/tv_vip_coupon_line11" />
+
+
+    <TextView
+        android:id="@+id/tv_vip_coupon_line21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15dp"
+        android:layout_marginTop="@dimen/dp_10dp"
+        android:text="立享"
+        android:textColor="#6a3906"
+        android:textSize="@dimen/text_size_13"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_left"
+        app:layout_constraintStart_toEndOf="@+id/iv_left"
+        app:layout_constraintTop_toBottomOf="@+id/iv_left" />
+
+    <TextView
+        android:id="@+id/tv_vip_coupon_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10dp"
+        android:layout_marginStart="@dimen/dp_2dp"
+        android:textColor="#6a3906"
+        android:textSize="@dimen/text_size_17"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_vip_coupon_line21"
+        app:layout_constraintStart_toEndOf="@+id/tv_vip_coupon_line21" />
+
+    <TextView
+        android:id="@+id/tv_vip_coupon_line22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="超值会员大礼包"
+        android:textColor="#6a3906"
+        android:textSize="@dimen/text_size_13"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_vip_coupon_line21"
+        app:layout_constraintStart_toEndOf="@+id/tv_vip_coupon_price" />
+
+
+</android.support.constraint.ConstraintLayout>
+

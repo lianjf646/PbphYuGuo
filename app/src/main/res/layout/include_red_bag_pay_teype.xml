@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45dp"
+        android:paddingStart="@dimen/dp_15dp"
+        android:gravity="center_vertical"
+        android:text="支付方式"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/chb_wx"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:button="@null"-->
+    <!--android:checked="true"-->
+    <!--android:drawableLeft="@drawable/micro_letter_to_pay"-->
+    <!--android:drawablePadding="@dimen/dp_15dp"-->
+    <!--android:drawableRight="@drawable/chb_address_default"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="@dimen/dp_15dp"-->
+    <!--android:text="微信支付" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginLeft="@dimen/dp_15dp"-->
+    <!--android:background="@color/line" />-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/chb_zfb"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:button="@null"-->
+    <!--android:checked="false"-->
+    <!--android:drawableLeft="@drawable/alipay_payment"-->
+    <!--android:drawablePadding="@dimen/dp_15dp"-->
+    <!--android:drawableRight="@drawable/chb_address_default"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="@dimen/dp_15dp"-->
+    <!--android:text="微信支付" />-->
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbn_wx"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableStart="@drawable/micro_letter_to_pay"
+            android:drawablePadding="@dimen/dp_15dp"
+            android:drawableEnd="@drawable/chb_address_default"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_15dp"
+            android:text="微信支付" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:background="@color/line" />
+
+        <RadioButton
+            android:id="@+id/rbn_zfb"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:button="@null"
+            android:drawableStart="@drawable/alipay_payment"
+            android:drawablePadding="@dimen/dp_15dp"
+            android:drawableEnd="@drawable/chb_address_default"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_15dp"
+            android:text="支付宝支付" />
+    </RadioGroup>
+</LinearLayout>

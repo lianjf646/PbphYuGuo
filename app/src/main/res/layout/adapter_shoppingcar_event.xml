@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_shopcar_event"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:gravity="center"
+    android:paddingBottom="@dimen/dp_7dp"
+    android:paddingLeft="@dimen/dp_15dp"
+    android:paddingRight="@dimen/dp_15dp"
+    android:paddingTop="@dimen/dp_7dp">
+    <!--android:background="#f7e5b5"-->
+
+    <TextView
+        android:id="@+id/tv_shopcar_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_5dp"
+        android:background="@drawable/coupon_bg"
+        android:maxLines="1"
+        android:padding="@dimen/dp_2dp"
+        android:text="超值"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size_11"
+        android:typeface="monospace" />
+
+
+    <TextView
+        android:id="@+id/tv_shopcar_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="100元5件"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14"
+        android:typeface="monospace" />
+
+
+    <TextView
+        android:id="@+id/tv_shopcar_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp_5dp"
+        android:drawableRight="@drawable/right_arrow"
+        android:maxLines="1"
+        android:text="去凑单"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size_14"
+        android:typeface="monospace" />
+
+</LinearLayout>
+

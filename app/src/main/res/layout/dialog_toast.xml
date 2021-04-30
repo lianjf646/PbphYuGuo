@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="ss"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_17" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:minLines="1"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="ss"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_one_bg"
+        android:paddingBottom="@dimen/dp_15dp"
+        android:paddingTop="@dimen/dp_15dp"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_19" />
+
+</LinearLayout>
+

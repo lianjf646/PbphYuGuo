@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/dp_10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_adapter_coupon_list_price_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10dp">
+
+        <TextView
+            android:id="@+id/tv_adapter_coupon_list_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_19"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/tv_adapter_coupon_list_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="满80元可用"
+            android:layout_marginTop="@dimen/dp_5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15"
+            android:typeface="monospace"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_adapter_coupon_list_price_layout"
+        android:layout_alignTop="@+id/ll_adapter_coupon_list_price_layout"
+        android:layout_toLeftOf="@+id/tv_adapter_coupon_list_receive_coupon"
+        android:layout_toRightOf="@+id/ll_adapter_coupon_list_price_layout"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10dp">
+
+        <TextView
+            android:id="@+id/tv_adapter_coupon_list_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="测试"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/tv_adapter_coupon_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.01.01"
+            android:textSize="@dimen/text_size_15"
+            android:typeface="monospace"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_adapter_coupon_list_receive_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_adapter_coupon_list_price_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_10dp"
+        android:background="@drawable/bg_button_usable_coupon_corner"
+        android:paddingBottom="@dimen/dp_3dp"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:paddingRight="@dimen/dp_10dp"
+        android:paddingTop="@dimen/dp_3dp"
+        android:text="立即使用"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15"
+        android:typeface="monospace"/>
+
+</RelativeLayout>
+

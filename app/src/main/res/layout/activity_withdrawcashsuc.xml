@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_80dp"
+        android:src="@drawable/successful" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_15dp"
+        android:text="提现成功"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_21" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_5dp"
+        android:text="提现将在1~3个工作日内到账,请耐心等待."
+        android:textSize="@dimen/text_size_19" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_5dp"
+        android:text="查看提现记录可了解提现进度"
+        android:textSize="@dimen/text_size_19" />
+
+    <Button
+        android:id="@+id/btn_know"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:layout_marginTop="@dimen/dp_50dp"
+        android:background="@drawable/text_view_border"
+        android:text="知道了"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_entry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15dp"
+        android:layout_marginRight="@dimen/dp_15dp"
+        android:layout_marginTop="@dimen/dp_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_invitation_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10dp"
+            android:drawableTop="@drawable/home_invitation"
+            android:gravity="center"
+            android:text="邀请好友"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:id="@+id/tv_open_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10dp"
+            android:drawableTop="@drawable/home_open"
+            android:gravity="center"
+            android:text="开通会员"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:id="@+id/tv_vip_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10dp"
+            android:drawableTop="@drawable/home_vip"
+            android:gravity="center"
+            android:text="会员专场"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_11" />
+
+        <TextView
+            android:id="@+id/tv_my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_10dp"
+            android:drawableTop="@drawable/home_order"
+            android:gravity="center"
+            android:text="我的订单"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_11" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5dp"
+        android:layout_marginTop="@dimen/dp_5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_service" />
+
+    <ImageView
+        android:id="@+id/iv_best_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_best_seller" />
+</LinearLayout>

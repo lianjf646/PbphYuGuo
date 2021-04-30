@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9"
+    android:orientation="horizontal">
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5dp"
+        android:src="@drawable/scope"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+
+        android:paddingTop="@dimen/dp_5dp"
+        android:paddingBottom="@dimen/dp_5dp"
+        android:text="我的花果山配送范围"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_12" />
+
+    <ImageView
+        android:id="@+id/iv_gone_heard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dp_15dp"
+        android:paddingRight="@dimen/dp_15dp"
+        android:src="@drawable/shut_down" />
+
+</LinearLayout>

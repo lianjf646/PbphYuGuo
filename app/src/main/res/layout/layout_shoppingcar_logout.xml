@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/not_log_in" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10dp"
+        android:gravity="center"
+        android:text="您还没有登录，赶快去登录哦!"
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_size_12" />
+
+    <Button
+        android:id="@+id/btn_shop_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_button_main_color_corner"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_40dp"
+        android:paddingRight="@dimen/dp_40dp"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+</LinearLayout>
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_activity_bg"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <Button
+        android:id="@+id/btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:text="添加收货地址"
+        android:textColor="@color/white" />
+
+    <ListView
+        android:id="@+id/lv_my_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_add_address"
+        android:layout_below="@+id/view_line"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:dividerHeight="@dimen/dp_5dp"
+        android:divider="@color/list_activity_bg"/>
+
+    <TextView
+        android:id="@+id/tv_not_have_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/dp_10dp"
+        android:drawableTop="@drawable/address"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="还没有收货地址，快去添加地址吧" />
+
+</RelativeLayout>

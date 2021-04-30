@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <include
+        layout="@layout/include_address_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:id="@+id/chb_choice_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_10dp"
+        android:button="@null"
+        android:drawableLeft="@drawable/chb_address_default" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_15dp"
+    android:paddingTop="@dimen/dp_15dp">
+
+    <ImageView
+        android:id="@+id/iv_address_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_15dp"
+        android:src="@drawable/position"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15dp"
+        android:layout_toEndOf="@+id/iv_address_image"
+        android:layout_toStartOf="@+id/iv_right">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_15dp"
+            android:layout_marginStart="@dimen/dp_15dp"
+            android:layout_toEndOf="@+id/tv_user_name"
+            android:lines="1"
+            android:textColor="@color/black"
+            tools:text="电话" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginEnd="@dimen/dp_15dp"
+            android:layout_marginTop="@dimen/dp_5dp"
+            tools:text="详细地址" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_15dp"
+        android:layout_marginStart="@dimen/dp_15dp"
+        android:src="@drawable/right"
+        android:visibility="invisible" />
+</RelativeLayout>

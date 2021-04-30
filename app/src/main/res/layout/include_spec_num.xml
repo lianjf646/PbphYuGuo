@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10dp"
+        android:text="购买数量"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_limit_bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5dp"
+        android:layout_weight="1"
+        android:text="限购0件"
+        android:textColor="@color/red" />
+
+    <ImageButton
+        android:id="@+id/ivbtn_goods_info_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_10dp"
+        android:paddingBottom="@dimen/dp_10dp"
+        android:scaleType="center"
+        android:background="@null"
+        android:src="@drawable/reduce_grey"
+       />
+
+
+    <TextView
+        android:id="@+id/tv_goods_info_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="@dimen/dp_15dp" />
+
+
+    <ImageButton
+        android:id="@+id/ivbtn_goods_info_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10dp"
+        android:scaleType="center"
+        android:background="@null"
+        android:src="@drawable/add_selected" />
+
+
+</LinearLayout>

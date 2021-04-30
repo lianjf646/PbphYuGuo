@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_heard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@color/white"
+        android:src="@drawable/hyzc_banner" />
+
+
+
+    <TextView
+        android:id="@+id/tv_vip_not_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_heard"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_50dp"
+        android:drawablePadding="@dimen/dp_10dp"
+        android:drawableTop="@drawable/out_of_range_03"
+        android:gravity="center"
+        android:text="暂无商品"
+        android:visibility="visible" />
+
+</RelativeLayout>

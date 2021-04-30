@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <CheckBox
+        android:id="@+id/cb_check_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10dp"
+        android:button="@drawable/chb_address_default"
+        android:paddingStart="@dimen/dp_10dp"
+        android:text="全选"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button"
+        android:layout_alignTop="@id/button"
+        android:layout_toLeftOf="@id/button"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5dp"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_17" />
+
+
+            <TextView
+                android:id="@+id/tv_price_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="0.00"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_17" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已优惠:"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_13" />
+
+
+            <TextView
+                android:id="@+id/tv_price_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:gravity="left|center"
+                android:text="000"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:lines="2"
+        android:paddingBottom="@dimen/dp_4dp"
+        android:paddingLeft="@dimen/dp_40dp"
+        android:paddingRight="@dimen/dp_40dp"
+        android:paddingTop="@dimen/dp_4dp"
+        android:text="去结算"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16" />
+
+
+</RelativeLayout>

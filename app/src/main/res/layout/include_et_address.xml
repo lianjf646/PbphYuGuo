@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0EFF7"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_address_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10dp"
+        android:layout_weight="1"
+        android:background="@drawable/et_address_bg"
+        android:drawableLeft="@drawable/sy_dd_dz"
+        android:drawablePadding="@dimen/dp_5dp"
+        android:hint="请输入收货地址"
+        android:imeOptions="actionSearch"
+        android:paddingBottom="@dimen/dp_8dp"
+        android:paddingLeft="@dimen/dp_5dp"
+        android:paddingTop="@dimen/dp_8dp"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10dp"
+        android:text="取消"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_size_15" />
+
+</LinearLayout>

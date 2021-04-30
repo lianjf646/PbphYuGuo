@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/invite_botton_background"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10dp"
+        android:gravity="center"
+        android:text="邀请奖励"
+        android:textColor="@color/color_bf6301"
+        android:textSize="@dimen/text_size_17"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="好友完成订单 您即可拿到相应的奖励"
+        android:textColor="@color/color_bf6301"
+        android:textSize="@dimen/text_size_12" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10dp"
+        android:paddingBottom="@dimen/dp_5dp"
+        android:layout_marginTop="@dimen/dp_15dp"
+        android:layout_marginStart="@dimen/dp_30dp"
+        android:layout_marginEnd="@dimen/dp_30dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_friend_share_num"
+            android:layout_width="@dimen/dp_10dp"
+            android:layout_height="@dimen/dp_10dp"
+            android:layout_marginLeft="@dimen/dp_10dp"
+            android:layout_marginRight="@dimen/dp_10dp"
+            android:background="@drawable/round_point_bg" />
+
+        <TextView
+            android:id="@+id/tv_friend_share_num"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="已邀请0人获得"
+            android:gravity="left|center"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size_13" />
+
+        <RelativeLayout
+            android:id="@+id/rl_coupon_bg"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/quan1"
+            android:paddingLeft="@dimen/dp_5dp"
+            android:paddingRight="@dimen/dp_5dp"
+            android:gravity="center"
+            >
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_centerInParent="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/view">
+
+                <TextView
+                    android:id="@+id/view_friend_share_coupon_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_19"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="元"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_13" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="无门槛优惠券"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/view_friend_share_coupon_num_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10dp"
+            android:gravity="center"
+            android:text="×"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/view_friend_share_coupon_num"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="0"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/text_size_19" />
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/layout_share3"
+        android:layout_marginStart="@dimen/dp_30dp"
+        android:layout_marginTop="@dimen/dp_15dp"
+        android:layout_marginEnd="@dimen/dp_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_10dp"
+        android:layout_height="@dimen/dp_40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/include_coupon_line"
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/black_gray" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include_coupon_num1"
+        layout="@layout/layout_coupon_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5dp"
+        android:layout_marginTop="@dimen/dp_10dp" />
+
+    <include
+        android:id="@+id/include_coupon_num2"
+        layout="@layout/layout_coupon_nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_coupon_num1"
+        android:layout_marginBottom="@dimen/dp_10dp"
+        android:layout_marginTop="@dimen/dp_5dp" />
+
+
+</RelativeLayout>
